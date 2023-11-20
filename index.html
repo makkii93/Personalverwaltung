@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Personalverwaltung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalverwaltung</h1>
+       <!-- Anlegen von Mitarbeitern -->
+    <section>
+        <h2>Anlegen von Mitarbeitern</h2>
+        <form action="index.php" method="post">
+            <!-- Formularfelder für Mitarbeiterdaten -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="vorname">Vorname:</label>
+            <input type="text" id="vorname" name="vorname" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- Weitere Felder für Mitarbeiterdaten -->
+            <input type="submit" name="submit" value="Mitarbeiter anlegen">
+        </form>
+    </section>
+
+    <!-- Bearbeiten von Mitarbeitern -->
+    <section>
+        <h2>Bearbeiten von Mitarbeitern</h2>
+        <form action="index.php" method="post">
+            <!-- Formularfelder für Bearbeitung -->
+            <label for="mitarbeiter_id">Mitarbeiter ID:</label>
+            <input type="text" id="mitarbeiter_id" name="mitarbeiter_id" required>
+            <!-- Weitere Felder für Bearbeitung -->
+            <input type="submit" name="submit" value="Mitarbeiter bearbeiten">
+        </form>
+    </section>
+
+    <!-- Suchen von Mitarbeitern -->
+    <section>
+        <h2>Suchen von Mitarbeitern</h2>
+        <form action="index.php" method="post">
+            <!-- Formularfelder für die Suche -->
+            <label for="suchbegriff">Suchbegriff:</label>
+            <input type="text" id="suchbegriff" name="suchbegriff" required>
+            <!-- Weitere Felder für die Suche -->
+            <input type="submit" name="submit" value="Mitarbeiter suchen">
+        </form>
+    </section>
+
+    <!-- Drucken von Mitarbeiterlisten -->
+    <section>
+        <h2>Drucken von Mitarbeiterlisten</h2>
+        <form action="index.php" method="post">
+            <!-- Formularfelder für das Drucken -->
+            <label for="druckoptionen">Druckoptionen:</label>
+            <!-- Hier Dropdowns oder Checkboxen für Druckoptionen -->
+            <input type="submit" name="submit" value="Mitarbeiterliste drucken">
+        </form>
+    </section>
+</body>
+</html>
